@@ -71,7 +71,7 @@
     .display {
         width: calc(100% - 230px);
         height: calc(100% - 90px);
-        background-color: #e9a37d;
+        background-color: #141922;
         overflow-y: auto;
         position: relative;
         top: 90px;
@@ -81,7 +81,13 @@
         .navbar {
             width: 100%;
             min-height: 50px;
-            background-color: #ce5574;
+            /* background-color: #ce5574; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: #7D7F84;
+
         }
 
         .recently_played {
