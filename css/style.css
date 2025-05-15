@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /* region LAYOUT GENERALE */
 .wrapper {
     width: 100%;
@@ -94,6 +98,16 @@
             width: 100%;
             height: 350px;
             background-color: #f2a3a3;
+            padding: 1.5rem;
+
+            .covers {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
         }
 
         .created_for {
