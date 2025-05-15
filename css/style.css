@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* region LAYOUT GENERALE */
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -17,6 +18,54 @@
     background-color: lightblue;
     display: flex;
 
+    .sidebar {
+        width: 230px;
+        height: 100%;
+        background-color: #000000;
+
+        .logo {
+            width: 100%;
+            height: 90px;
+            background-color: #78a1ed;
+        }
+
+        .home {
+            width: 100%;
+            height: 100px;
+            background-color: #aee4b1;
+        }
+
+        .playlist {
+            width: 100%;
+            height: calc(100% - 290px);
+            background-color: #e5d47d;
+        }
+
+        .account {
+            width: 100%;
+            height: 100px;
+            background-color: #f2a3a3;
+        }
+    }
+
+    .display {
+        width: calc(100% - 230px);
+        height: 100%;
+        background-color: #141922;
+        overflow-y: auto;
+        position: relative;
+
+        .display_top {
+            width: 100%;
+            height: 90px;
+            opacity: 0.8;
+            background-color: #080B12;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 230px;
+        }
+    }
 }
 
 .bottom {
@@ -25,27 +74,5 @@
     background-color: #282828;
 }
 
-.sidebar {
-    width: 230px;
-    height: 100%;
-    background-color: #000000;
-}
 
-.display {
-    width: calc(100% - 230px);
-    height: 100%;
-    background-color: #141922;
-    overflow-y: auto;
-    position: relative;
-
-    .display_top {
-        width: 100%;
-        height: 90px;
-        opacity: 0.8;
-        background-color: #080B12;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 230px;
-    }
-}
+/* endregion LAYOUT GENERALE */
