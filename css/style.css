@@ -17,6 +17,7 @@
     height: calc(100% - 70px);
     background-color: lightblue;
     display: flex;
+    position: relative;
 
     .sidebar {
         width: 230px;
@@ -48,23 +49,58 @@
         }
     }
 
+    .display_top {
+        width: calc(100% - 230px);
+        height: 90px;
+        opacity: 0.8;
+        background-color: #92aae2;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0px;
+        display: flex;
+        justify-content: end;
+
+        .upgrade {
+            width: 230px;
+            height: 100%;
+            background-color: #f38fd2;
+        }
+    }
+
     .display {
         width: calc(100% - 230px);
-        height: 100%;
-        background-color: #141922;
+        height: calc(100% - 90px);
+        background-color: #e9a37d;
         overflow-y: auto;
         position: relative;
+        top: 90px;
+        right: 0px;
 
-        .display_top {
+
+        .navbar {
             width: 100%;
-            height: 90px;
-            opacity: 0.8;
-            background-color: #080B12;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 230px;
+            min-height: 50px;
+            background-color: #ce5574;
         }
+
+        .recently_played {
+            width: 100%;
+            height: 350px;
+            background-color: #f2a3a3;
+        }
+
+        .created_for {
+            width: 100%;
+            height: 350px;
+            background-color: #97ec7b;
+        }
+    }
+
+    .popular {
+        width: 100%;
+        height: 350px;
+        background-color: #c5e7f0;
     }
 }
 
@@ -72,7 +108,27 @@
     width: 100%;
     height: 70px;
     background-color: #282828;
+    display: flex;
+
+    .left {
+        width: 230px;
+        height: 100%;
+        background-color: #e5f38f;
+    }
+
+    .middle {
+        width: calc(100% - 460px);
+        height: 100%;
+        background-color: #f6cc89;
+    }
+
+    .right {
+        width: 230px;
+        height: 100%;
+        background-color: #e5f38f;
+    }
 }
+
 
 
 /* endregion LAYOUT GENERALE */
