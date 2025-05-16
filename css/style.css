@@ -145,7 +145,37 @@ h3 {
 .account {
     width: 100%;
     height: 100px;
-    background-color: #f2a3a3;
+    /* background-color: #f2a3a3; */
+    padding: 0.5rem 1rem;
+
+    i {
+        margin-right: 0.3rem;
+    }
+
+    .text {
+        font-size: 1.10rem;
+        display: inline-block;
+    }
+
+    hr {
+        margin: 1rem 0;
+        border: 0.5px solid;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        background-color: #a7a8aa;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+
+    .bold {
+        display: inline-flex;
+        color: white;
+        vertical-align: super;
+        font-size: 1.10rem;
+    }
 }
 
 /* DISPLAY SECTION */
