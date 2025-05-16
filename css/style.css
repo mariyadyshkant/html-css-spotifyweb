@@ -47,7 +47,7 @@ h3 {
 /* #endregion FONT */
 
 
-/* region LAYOUT GENERALE */
+/* region LAYOUT */
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -60,119 +60,6 @@ h3 {
     height: calc(100% - 70px);
     background-color: #141922;
     display: flex;
-
-    .sidebar {
-        width: 230px;
-        height: 100%;
-        background-color: #000000;
-
-        .logo {
-            width: 100%;
-            height: 90px;
-            background-color: #78a1ed;
-        }
-
-        .home {
-            width: 100%;
-            height: 100px;
-            background-color: #aee4b1;
-        }
-
-        .playlist {
-            width: 100%;
-            height: calc(100% - 290px);
-            background-color: #e5d47d;
-        }
-
-        .account {
-            width: 100%;
-            height: 100px;
-            background-color: #f2a3a3;
-        }
-    }
-
-
-
-    .display {
-        width: calc(100% - 230px);
-        height: 100%;
-        background-color: #141922;
-        overflow-y: auto;
-        position: relative;
-
-        .display_top {
-            width: 100%;
-            height: 90px;
-            background-color: #080B12;
-            opacity: 0.8;
-            position: sticky;
-            top: 0;
-            right: 0;
-            display: flex;
-            justify-content: end;
-            align-items: center;
-
-            .button {
-                padding: 0.8rem 1.5rem;
-                border: 0.2rem solid white;
-                border-radius: 1.5rem;
-                margin-right: 0.4rem;
-            }
-        }
-
-        .navbar {
-            width: 100%;
-            min-height: 50px;
-            /* background-color: #ce5574; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-
-        }
-
-        .recently_played {
-            width: 100%;
-            height: auto;
-            /* background-color: #f2a3a3; */
-            padding: 1.5rem;
-
-            .covers {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: start;
-                gap: 1rem;
-                padding-top: 2rem;
-                text-align: center;
-
-                .col {
-                    width: calc(100% / 6);
-                }
-
-                img {
-                    margin-bottom: 1rem;
-                    ;
-                }
-
-                h4 {
-                    margin-bottom: 0.6rem;
-                }
-            }
-        }
-
-        .created_for {
-            width: 100%;
-            height: 350px;
-            background-color: #97ec7b;
-        }
-    }
-
-    .popular {
-        width: 100%;
-        height: 350px;
-        background-color: #c5e7f0;
-    }
 }
 
 .bottom {
@@ -180,26 +67,156 @@ h3 {
     height: 70px;
     background-color: #282828;
     display: flex;
+}
 
-    .left {
-        width: 230px;
-        height: 100%;
-        background-color: #e5f38f;
+/* TOP SECTION */
+
+.sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.display {
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: #141922;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* SIDEBAR SECTION */
+
+.logo {
+    width: 100%;
+    height: 90px;
+    background-color: #78a1ed;
+}
+
+.home {
+    width: 100%;
+    height: 100px;
+    background-color: #aee4b1;
+}
+
+.playlist {
+    width: 100%;
+    height: calc(100% - 290px);
+    background-color: #e5d47d;
+}
+
+.account {
+    width: 100%;
+    height: 100px;
+    background-color: #f2a3a3;
+}
+
+/* DISPLAY SECTION */
+
+.display_top {
+    width: 100%;
+    height: 90px;
+    background-color: #080B12;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button {
+    padding: 0.8rem 1.5rem;
+    border: 0.2rem solid white;
+    border-radius: 1.5rem;
+    margin-right: 0.4rem;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 50px;
+    /* background-color: #ce5574; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.recently_played {
+    width: 100%;
+    height: auto;
+    /* background-color: #f2a3a3; */
+    padding: 1.5rem;
+}
+
+/* #region COVER SECTION DENTRO RECENTLY PLAYED */
+.covers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.col {
+    width: calc(100% / 6);
+
+    img {
+        margin-bottom: 1rem;
     }
 
-    .middle {
-        width: calc(100% - 460px);
-        height: 100%;
-        background-color: #f6cc89;
+    h4 {
+        margin-bottom: 0.6rem;
     }
+}
 
-    .right {
-        width: 230px;
-        height: 100%;
-        background-color: #e5f38f;
+/* #endregion COVER SECTION DENTRO RECENTLY PLAYED */
+
+.created_for {
+    width: 100%;
+    height: 350px;
+    background-color: #97ec7b;
+}
+
+.popular {
+    width: 100%;
+    height: 350px;
+    background-color: #c5e7f0;
+}
+
+/* BOTTOM SECTION */
+
+.left {
+    width: 230px;
+    height: 100%;
+    background-color: #e5f38f;
+}
+
+.middle {
+    width: calc(100% - 460px);
+    height: 100%;
+    background-color: #f6cc89;
+}
+
+.right {
+    width: 230px;
+    height: 100%;
+    background-color: #e5f38f;
+}
+
+/* endregion LAYOUT */
+
+/* #region MEDIA QUERIES */
+@media screen and (min-width: 878px) {
+    .col {
+        width: calc(100% / 4);
     }
 }
 
 
-
-/* endregion LAYOUT GENERALE */
+/* #endregion MEDIA QUERIES */
