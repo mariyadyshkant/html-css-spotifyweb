@@ -141,7 +141,7 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
+    flex-wrap: wrap;
 }
 
 .recently_played {
@@ -212,11 +212,20 @@ h3 {
 /* endregion LAYOUT */
 
 /* #region MEDIA QUERIES */
-@media screen and (min-width: 878px) {
+@media screen and (max-width: 878px) {
     .col {
         width: calc(100% / 4);
     }
 }
 
+@media screen and (max-width: 552px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .display {
+        width: calc(100% - 50px);
+    }
+}
 
 /* #endregion MEDIA QUERIES */
