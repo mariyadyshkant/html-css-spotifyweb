@@ -110,13 +110,7 @@ h3 {
             ;
         }
 
-        /* .xs {
-            padding: 0.2rem 0.7rem;
-        } */
     }
-
-
-
 }
 
 .display {
@@ -258,12 +252,29 @@ h3 {
     padding: 0.8rem 1rem;
 }
 
-.recently_played {
+.recently_played,
+.created_for,
+.popular {
     width: 100%;
     height: auto;
     /* background-color: #f2a3a3; */
     padding: 1.5rem;
 }
+
+.created_for,
+.popular {
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.popular {
+    img {
+        border-radius: 50%;
+        ;
+    }
+}
+
 
 /* #region COVER SECTION DENTRO RECENTLY PLAYED */
 .covers {
@@ -292,18 +303,6 @@ h3 {
 }
 
 /* #endregion COVER SECTION DENTRO RECENTLY PLAYED */
-
-.created_for {
-    width: 100%;
-    height: 350px;
-    background-color: #97ec7b;
-}
-
-.popular {
-    width: 100%;
-    height: 350px;
-    background-color: #c5e7f0;
-}
 
 /* BOTTOM SECTION */
 
@@ -375,7 +374,7 @@ h3 {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
     .col {
         width: calc(100% - 1rem);
     }
