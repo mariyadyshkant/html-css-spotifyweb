@@ -252,6 +252,20 @@ h3 {
     padding: 0.8rem 1rem;
 }
 
+.text_navbar:first-child {
+    position: relative;
+}
+
+.text_navbar:first-child::after {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
 .recently_played,
 .created_for,
 .popular {
@@ -287,6 +301,20 @@ h3 {
     padding-top: 2rem;
     text-align: center;
 }
+
+.play_hover {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 350%;
+        translate: -50% -250%;
+        /* display: none; */
+    }
+}
+
 
 .col {
     width: calc(100% / 6 - 1rem);
@@ -435,6 +463,23 @@ h3 {
     }
 }
 
+.playing_bar_white::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+
+
+
 
 
 /* endregion LAYOUT */
@@ -443,6 +488,16 @@ h3 {
 .button:hover {
     zoom: 1.1;
     transition: zoom 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.playing_bar_white:hover {
+    background-color: chartreuse;
+
+}
+
+.playing_bar_white:hover::after {
+    display: block;
 }
 
 /* #endregion HOVER */
