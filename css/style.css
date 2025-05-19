@@ -75,6 +75,7 @@ h3 {
     width: 230px;
     height: 100%;
     background-color: #000000;
+    overflow: hidden;
 }
 
 .sidebar_xs {
@@ -152,7 +153,7 @@ h3 {
 
 .playlist {
     width: 100%;
-    height: calc(100% - 310px);
+    height: 450px;
     /* background-color: #e5d47d; */
     padding: 1rem;
 
@@ -164,6 +165,10 @@ h3 {
     i {
         font-size: 2.5em;
         margin-right: 0.6rem;
+    }
+
+    .plus_white {
+        display: none;
     }
 
     .text {
@@ -194,6 +199,10 @@ h3 {
     .text {
         font-size: 1.10rem;
         display: inline-block;
+    }
+
+    .arrow_white {
+        display: none;
     }
 
     hr {
@@ -315,15 +324,6 @@ h3 {
     }
 }
 
-.play_hover:hover {
-    img {
-        opacity: 40%;
-    }
-
-    i {
-        display: block;
-    }
-}
 
 .col {
     width: calc(100% / 6 - 1rem);
@@ -373,9 +373,6 @@ h3 {
         font-size: 0.8rem;
         color: white;
     }
-
-
-
 }
 
 .middle {
@@ -395,6 +392,10 @@ h3 {
     align-items: center;
     gap: 1.2rem;
 
+}
+
+.fa-circle-play {
+    transition: transform .2s;
 }
 
 .middle_playing_bar_grey {
@@ -484,13 +485,6 @@ h3 {
     display: none;
 }
 
-
-
-
-
-
-
-
 /* endregion LAYOUT */
 
 /* #region HOVER */
@@ -502,11 +496,76 @@ h3 {
 
 .playing_bar_white:hover {
     background-color: chartreuse;
-
+    cursor: pointer;
 }
 
 .playing_bar_white:hover::after {
     display: block;
+}
+
+.text_navbar:hover,
+.sidebar .text:hover,
+.sidebar li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.crea_playlist:hover {
+    cursor: pointer;
+
+    .text {
+        color: white;
+    }
+
+    .plus_grey {
+        display: none;
+    }
+
+    .plus_white {
+        display: inline;
+    }
+}
+
+.account .text:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.account .text:hover {
+    .account .arrow_grey {
+        display: none;
+    }
+
+    .account .arrow_white {
+        display: inline;
+    }
+}
+
+.play_hover:hover {
+    cursor: pointer;
+
+    img {
+        opacity: 40%;
+    }
+
+    i {
+        display: block;
+    }
+}
+
+.left_icons i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.p_xs:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* #endregion HOVER */
