@@ -311,10 +311,19 @@ h3 {
         left: 50%;
         font-size: 350%;
         translate: -50% -250%;
-        /* display: none; */
+        display: none;
     }
 }
 
+.play_hover:hover {
+    img {
+        opacity: 40%;
+    }
+
+    i {
+        display: block;
+    }
+}
 
 .col {
     width: calc(100% / 6 - 1rem);
